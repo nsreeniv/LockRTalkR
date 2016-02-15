@@ -9,14 +9,14 @@ var T = new Twit({
     timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
 })
 
-var LIST_SLUG = 'sports-teams';
+var LIST_SLUG = 'JustUs';
 var OWNER_SCREEN_NAME = 'LockRTalkR';
 
 setInterval( function(){
     
     LockRTalkR();
 
-}, 5 * 1000);  //Timer set to refresh app every 30 seconds 
+}, 2 * 60 * 1000);  //Timer set to refresh app 2 minutes 
 
 function LockRTalkR()
 {
