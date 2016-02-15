@@ -1,0 +1,23 @@
+{
+  "name": "lockrtalkr",
+  "version": "1.0.0",
+  "description": "Detects when sport teams mention each other on Twitter and re-tweets.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsreeniv/LockRTalkR.git"
+  },
+  "author": "Nanditha Sreenivasan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nsreeniv/LockRTalkR/issues"
+  },
+  "homepage": "https://github.com/nsreeniv/LockRTalkR#readme",
+  "dependencies": {
+    "bluebird": "^3.3.1",
+    "twit": "^2.2.2"
+  }
+}
