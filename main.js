@@ -16,7 +16,7 @@ setInterval( function(){
     
     LockRTalkR();
 
-}, 2 * 60 * 1000);  //Timer set to refresh app 2 minutes 
+}, 45 * 1000);  //Timer set to refresh app 45 seconds 
 
 function LockRTalkR()
 {
