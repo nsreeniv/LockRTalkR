@@ -20,7 +20,7 @@ var T = new Twit({
     timeout_ms:           60*1000,  
 })
 
-var LIST_SLUG = 'sports-teams';
+var LIST_SLUG = 'JustUs';
 var OWNER_SCREEN_NAME = 'LockRTalkR';
 
 setInterval( function(){
@@ -55,6 +55,7 @@ function LockRTalkR()
           for( var i = 0; i < tweets.length ; i++)
           {
               var currentTweet = tweets[i];
+              var sreenName = currentTweet.screen_name;
               var tweetId = currentTweet.id_str;
               var tweetText = currentTweet.text;
               var userMentionedHandles = currentTweet.entities.user_mentions;
@@ -65,9 +66,13 @@ function LockRTalkR()
                   {
                       var mentionedHandle = userMentionedHandles[k].screen_name;
 
-                      if( handleMap[mentionedHandle] )
+                      // Do not retweet if the user mentions themselves
+                      if( screenName === mentionedHandle )
+                          continue;
+                      else if( handleMap[mentionedHandle] )
                       {
                           promises.push(retweet( tweetId, tweetText ));
+                          break;
                       }
                   }
               }
