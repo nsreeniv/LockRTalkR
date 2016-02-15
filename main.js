@@ -55,7 +55,7 @@ function LockRTalkR()
           for( var i = 0; i < tweets.length ; i++)
           {
               var currentTweet = tweets[i];
-              var sreenName = currentTweet.screen_name;
+              var screenName = currentTweet.screen_name;
               var tweetId = currentTweet.id_str;
               var tweetText = currentTweet.text;
               var userMentionedHandles = currentTweet.entities.user_mentions;
