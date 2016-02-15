@@ -20,7 +20,7 @@ var T = new Twit({
     timeout_ms:           60*1000,  
 })
 
-var LIST_SLUG = 'JustUs';
+var LIST_SLUG = 'sports-teams';
 var OWNER_SCREEN_NAME = 'LockRTalkR';
 
 setInterval( function(){
