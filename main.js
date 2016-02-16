@@ -23,11 +23,11 @@ var T = new Twit({
 var LIST_SLUG = 'sports-teams';
 var OWNER_SCREEN_NAME = 'LockRTalkR';
 
-setInterval( function(){
-    
-    LockRTalkR();
 
-}, 2 * 60 * 1000);  //Timer set to refresh app every 2 minutes 
+LockRTalkR();
+
+// -----------------------------------------------------
+// -----------------------------------------------------
 
 function LockRTalkR()
 {
