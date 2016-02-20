@@ -33,7 +33,7 @@ function LockRTalkR()
 {
     var handleMap = {};
 
-    T.get('lists/members', { slug: LIST_SLUG, 
+    return T.get('lists/members', { slug: LIST_SLUG, 
     	                       owner_screen_name : OWNER_SCREEN_NAME, 
     	                       count : 5000 } )
 
@@ -83,6 +83,9 @@ function LockRTalkR()
       })
       .catch(function (err) {
           console.log('caught error', err.stack)
+      })
+      .finally(function() {
+        process.exit(0);
       })
 }
 
