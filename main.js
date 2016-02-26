@@ -63,7 +63,7 @@ function LockRTalkR()
 
               if( userMentionedHandles )
               {
-                  for( var k = 0; k < userMentionedHandles.length; k++ )
+                  for( var k = userMentionedHandles.length - 1; k >= 0; k-- )
                   {
                       var mentionedHandle = userMentionedHandles[k].screen_name;
 
